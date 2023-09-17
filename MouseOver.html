@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>  
+        <title>Joseph Parrett</title> 
+        <script>
+            function goesIn(x) {
+                x.style.height = "216px";
+                x.style.width = "216px";
+            }
+            function goesOut(x) {
+                x.style.height = "108px";
+                x.style.width = "108px";
+            }        
+        </script>
+    </head>
+	<body>
+        <h1>Joseph Parrett</h1>
+        <p>The function goesIn() is triggered when the user moves the mouse pointer
+            over the image.</p>
+        <p>The function goesOut() is triggered when the mouse pointer moves
+            out of the image.</p>
+        <img onmouseover="goesIn(this)" onmouseout="goesOut(this)"
+            boarder="0" src="Trojan.jpg" alt="DSU Trojan" width="108" height="108">
+	</body>	
+</html>
